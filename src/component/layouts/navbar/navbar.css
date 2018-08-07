@@ -2,11 +2,11 @@
     font-weight: 600 !important;
     font-size: 15px !important;
 }
-.MuiAppBar-colorPrimary-7{
+.MuiAppBar-colorPrimary-8{
     background-color: #383838 !important;
 }
 @media (min-width: 600px){
-    .MuiToolbar-root-36{
+    .MuiToolbar-root-37{
         min-height: 55px !important;
     }
 }
