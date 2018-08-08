@@ -16,6 +16,9 @@ body {
 .table_margin{
     margin-top: 15px;
 }
+.form_margin{
+    margin-top: 20px;
+}
 .MuiButton-mini-230{
     height: 30px !important;
     width: 34px !important;
@@ -27,4 +30,10 @@ body {
 }
 .Routing-content-125{
     background-color: #ffffff !important;
+}
+.form-padding{
+    padding-left: 0px !important;
+}
+.form-margin{
+    margin-top: 15px;
 }

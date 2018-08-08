@@ -3,6 +3,8 @@ import { Home, Team, Work } from './content';
 import { withStyles } from '@material-ui/core/styles';
 import { Route } from 'react-router-dom';
 
+import AddTeam from '../dashboard/content/team/pages/addTeam';
+
 const styles = theme => ({
     content: {
         flexGrow: 1,
@@ -22,6 +24,8 @@ function Routing(props){
                     <Route exact path="/dashboard" component={Home} />
                     <Route path="/team" component={Team} />
                     <Route path="/work" component={Work} />
+
+                    <Route path="/addTeam" component={AddTeam} />
                 </div>
             </div>
         </main>
