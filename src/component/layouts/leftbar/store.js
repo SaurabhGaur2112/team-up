@@ -18,3 +18,11 @@ export const storeTitle = [
         'link': '/work'
     }
 ];
+
+export const settingTitle = [
+    {
+        'id': 'change password',
+        'title': 'Change password',
+        'link': '/change_password'
+    }
+];

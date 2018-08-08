@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import { ListItem, ListItemText, Divider, List } from '@material-ui/core';
-import { homeTitle, storeTitle } from './store';
+import { homeTitle, storeTitle, settingTitle } from './store';
 import { NavLink } from 'react-router-dom';
 
 const drawerWidth = 200;
@@ -32,6 +32,12 @@ class Leftbar extends Component{
 
                 <List>
                     { storeTitle.map((value) => <NavLink to={value.link} style={{textDecoration: 'none'}} key={value.id}><ListItem button>
+                        <ListItemText primary={value.title}></ListItemText></ListItem></NavLink>) }
+                </List>
+                <Divider />
+
+                <List>
+                    { settingTitle.map((value) => <NavLink to={value.link} style={{textDecoration: 'none'}} key={value.id}><ListItem button>
                         <ListItemText primary={value.title}></ListItemText></ListItem></NavLink>) }
                 </List>
             </Drawer>

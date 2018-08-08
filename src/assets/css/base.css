@@ -37,3 +37,8 @@ body {
 .form-margin{
     margin-top: 15px;
 }
+.account_setup{
+    padding-top: 25px;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding-bottom: 25px;
+}
