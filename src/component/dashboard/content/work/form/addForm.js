@@ -9,7 +9,12 @@ export default class AddForm extends Component{
                         <label className="control-label col-sm-2 form-padding">Date</label>
 
                         <div className="col-sm-4">
-                            <input type="text" className="form-control" placeholder="Enter Name" />
+                            <div className="input-group date" data-date-format="dd.mm.yyyy">
+                                <input type="text" className="form-control" placeholder="dd.mm.yyyy" />
+                                <div className="input-group-addon">
+                                    <span className="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -19,7 +24,12 @@ export default class AddForm extends Component{
                         <label className="control-label col-sm-2 form-padding">Assign</label>
 
                         <div className="col-sm-4">
-                            <input type="text" className="form-control" placeholder="Mobile Number" />
+                            <select className="form-control">
+                                <option>1</option>
+                                <option>1</option>
+                                <option>1</option>
+                                <option>1</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -29,7 +39,7 @@ export default class AddForm extends Component{
                         <label className="control-label col-sm-2 form-padding">Work</label>
 
                         <div className="col-sm-4">
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Enter Address" style={{resize: 'none'}}></textarea>
+                        <textarea className="form-control" rows="5" id="comment" placeholder="Enter Work" style={{resize: 'none'}}></textarea>
                         </div>
                     </div>
                 </div>
@@ -39,7 +49,7 @@ export default class AddForm extends Component{
                         <label className="col-sm-2 form-padding"></label>
 
                         <div className="col-sm-4">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ export default class Work extends Component{
                         </Grid>
 
                         <Grid item xs="1">
-                            <NavLink to="/addTeam">
+                            <NavLink to="/addWork">
                                 <AddButton/><br/>
                             </NavLink>
                         </Grid>

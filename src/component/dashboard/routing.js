@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Route } from 'react-router-dom';
 
 import AddTeam from '../dashboard/content/team/pages/addTeam';
+import AddWork from '../dashboard/content/work/pages/addWork';
 
 const styles = theme => ({
     content: {
@@ -28,6 +29,7 @@ function Routing(props){
                     <Route path="/change_password" component={ChangePassword} />
 
                     <Route path="/addTeam" component={AddTeam} />
+                    <Route path="/addWork" component={AddWork} />
                 </div>
             </div>
         </main>
