@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import { IconButton, Typography, Toolbar } from '@material-ui/core';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import Logout from '../../dialog/logout';
 import { css } from 'react-emotion';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 const typo = css`
     flex: 1;
     cursor: pointer;
+    font-weight: 600 !important;
 `
 
 export default class Navbar extends Component{
@@ -16,13 +18,13 @@ export default class Navbar extends Component{
             <AppBar position="absolute">
                 <Toolbar>
                     <Typography variant="title" color="inherit" className={typo}>
-                        Dashboard
+                        <NavLink to="/dashboard" style={{'textDecoration': 'none','color': '#fff'}}>Dashboard</NavLink>
                     </Typography>
                     <IconButton
                         aria-haspopup="true"
                         color="inherit"
                     >
-                        <AccountCircle/>
+                        <Logout />
                     </IconButton>
                 </Toolbar>
             </AppBar>

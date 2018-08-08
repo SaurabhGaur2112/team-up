@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, Team, Work } from './content';
-import { withStyles, WithStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import { Route } from 'react-router-dom';
 
 const styles = theme => ({
@@ -19,7 +19,7 @@ function Routing(props){
         <main className={classes.content}>
             <div className={classes.toolbar}>
                 <div>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/dashboard" component={Home} />
                     <Route path="/team" component={Team} />
                     <Route path="/work" component={Work} />
                 </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import { css } from 'react-emotion';
 import { ListItem, ListItemText, Divider, List } from '@material-ui/core';
 import { homeTitle, storeTitle } from './store';
 import { NavLink } from 'react-router-dom';
@@ -26,13 +25,13 @@ class Leftbar extends Component{
                 classes={{paper: classes.drawerPaper}}
             >
                 <List style={{marginTop: '55px'}}>
-                    { homeTitle.map((value) => <NavLink to={value.link} style={{textDecoration: 'none'}}><ListItem button key={value.id}>
+                    { homeTitle.map((value) => <NavLink to={value.link} style={{textDecoration: 'none'}} key={value.id}><ListItem button>
                         <ListItemText primary={value.title}></ListItemText></ListItem></NavLink>) }
                 </List>
                 <Divider />
 
                 <List>
-                    { storeTitle.map((value) => <NavLink to={value.link} style={{textDecoration: 'none'}}><ListItem button key={value.id}>
+                    { storeTitle.map((value) => <NavLink to={value.link} style={{textDecoration: 'none'}} key={value.id}><ListItem button>
                         <ListItemText primary={value.title}></ListItemText></ListItem></NavLink>) }
                 </List>
             </Drawer>

@@ -7,3 +7,24 @@ body {
 .MuiTypography-subheading-46{
     font-size: 13px !important;
 }
+.buttonFont{
+    font-size: 13px;
+}
+.buttonPosition{
+    float: right;
+}
+.table_margin{
+    margin-top: 15px;
+}
+.MuiButton-mini-230{
+    height: 30px !important;
+    width: 34px !important;
+    margin: 0px 2px 0px 2px !important;
+}
+.MuiIconButton-root-63{
+    height: 35px !important;
+    width: 35px !important;
+}
+.Routing-content-125{
+    background-color: #ffffff !important;
+}
